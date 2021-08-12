@@ -6056,7 +6056,7 @@ gatsby-plugin-utils@^1.11.0:
   dependencies:
     joi "^17.2.1"
 
-gatsby-plugin-webfonts@^2.1.0:
+gatsby-plugin-webfonts@^2.1.0, gatsby-plugin-webfonts@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-webfonts/-/gatsby-plugin-webfonts-2.1.1.tgz#52159f719369b22cc49d0f82d9119a2f6c78c9d1"
   integrity sha512-eeek8hQ2kTrGIIxR97RmRxqDFwd5Uh0TbkJsSwcPowrBM1RrUVhAwERUYOcmQjK7+COjPOer3u61pcAyF7LX1w==
