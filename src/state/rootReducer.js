@@ -1,10 +1,10 @@
 // @flow
 
 import { combineReducers } from 'redux'
-import gameReducer from './gameReducer'
+import baseReducer from './baseReducer'
 
 const rootReducer = combineReducers({
-  game: gameReducer
+  base: baseReducer
 })
 
 export default rootReducer

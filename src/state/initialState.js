@@ -1,8 +1,8 @@
 // @flow
 
 const initialState = {
-  game: {
-
+  base: {
+    items: []
   }
 }
 
