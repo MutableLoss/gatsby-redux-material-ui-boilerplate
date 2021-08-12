@@ -32,7 +32,7 @@ module.exports = {
     {
       resolve: 'gatsby-theme-material-ui',
       options: {
-        webFontsConfig: {
+        // webFontsConfig: {
           // fonts: {
           //   google: [
           //     {
@@ -41,7 +41,7 @@ module.exports = {
           //     },
           //   ],
           // },
-        }
+        // }
       }
     },
     {
