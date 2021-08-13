@@ -33,8 +33,9 @@
     "@storybook/addon-essentials": "^6.3.7",
     "@storybook/addon-links": "^6.3.7",
     "@storybook/react": "^6.3.7",
+    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
-    "eslint-plugin-react": "^7.24.0",
+    "eslint-config-react-app": "^6.0.0",
     "prettier": "2.3.2"
   },
   "keywords": [
