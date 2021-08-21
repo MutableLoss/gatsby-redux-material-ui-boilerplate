@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby starter app with Redux/Redux ToolKit, Material-UI, ESLint, TypeScript, and Storybook
+  Gatsby starter app with Redux, Material-UI, ESLint, TypeScript, and Storybook
 </h1>
 
 ## Pre-Requisites
