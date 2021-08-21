@@ -5,15 +5,19 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby starter app with Redux, Material-UI, ESLint, TypeScript, and Storybook
+  Gatsby starter boilerplate for Redux and Material-UI
 </h1>
+
+This boilerplate gives you everything you need to write a Gatsby app using Redux and Material-UI. Aside from the framework it also offers ESLint, Jest, React-Test-Renderer, TypeScript, and Storybook. Since everything is already setup, all you have to do is start writing your app! 
+
 
 ## Pre-Requisites
 
 - Install [Gatsby CLI](https://www.gatsbyjs.com/docs/tutorial/part-0/#gatsby-cli)
 - Install [Yarn](https://classic.yarnpkg.com/en/docs/install)
+- Install a [Redux DevTools Extension](https://github.com/reduxjs/redux-devtools#redux-devtools)
 
-## Usage
+## Installation
 
 Clone the repo:
 
@@ -28,14 +32,44 @@ $ cd gatsby-redux-material-ui-boilerplate
 $ yarn install
 ```
 
-Develop!
+# Usage
 
+Starting the Gatsby App in Development
 ```
 $ gatsby develop
 ```
 
+*or*
 
-# 🚨 The Default Gatsby Docs 🚨
+```
+$ yarn start
+```
+
+Start Storybook:
+```
+$ yarn storybook
+```
+
+Run Unit Tests:
+
+```
+$ yarn test
+```
+
+Test in watch-mode:
+
+```
+$ yarn test-watch
+```
+
+## TypeScript
+
+Gatsby offers TypeScript support by default, so you can use it right out of the box. You can find more information on using TypeScript in Using Typescript built into the start app itself [using-typecript.tsx](src/pages/using-typecript.tsx), or from the [Gatsby Docs](https://www.gatsbyjs.com/docs/how-to/custom-configuration/typescript/). 
+
+For TS you will also want to make sure unit-testing is setup as well. To configure the Jest process, replace the [jest.config.js](jest.config.js) file with the [jest.config-ts.js](jest.config-ts.js) file. You will also want to update the [jest-preprocess file](jest-preprocess.js) file by enabling the typescript-preset which is commented out. 
+
+
+# 🚨 The Default Gatsby Starter Docs 🚨
 
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
