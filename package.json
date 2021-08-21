@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-redux-material-ui-boilerplate",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A complete boilerplate starter with Gatsby Redux and Material-UI",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Dennis Brown",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@reduxjs/toolkit": "^1.6.1",
@@ -47,7 +47,9 @@
     "ts-jest": "^27.0.5"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "redux",
+    "material-ui"
   ],
   "license": "0BSD",
   "scripts": {
