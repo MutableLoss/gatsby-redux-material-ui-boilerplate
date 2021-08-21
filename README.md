@@ -5,8 +5,37 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  Gatsby starter app with Redux/Redux ToolKit, Material-UI, ESLint, TypeScript, and Storybook
 </h1>
+
+## Pre-Requisites
+
+- Install [Gatsby CLI](https://www.gatsbyjs.com/docs/tutorial/part-0/#gatsby-cli)
+- Install [Yarn](https://classic.yarnpkg.com/en/docs/install)
+
+## Usage
+
+Clone the repo:
+
+```
+$ git clone https://github.com/MutableLoss/gatsby-redux-material-ui-boilerplate.git
+```
+
+Install packages:
+
+```
+$ cd gatsby-redux-material-ui-boilerplate
+$ yarn install
+```
+
+Develop!
+
+```
+$ gatsby develop
+```
+
+
+# 🚨 All The Default Gatsby Docs 🚨
 
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
