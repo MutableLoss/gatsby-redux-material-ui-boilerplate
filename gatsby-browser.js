@@ -8,14 +8,14 @@
 import React from 'react'
 import Layout from './src/components/layout'
 import { Provider } from 'react-redux'
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createTheme } from '@material-ui/core/styles';
 import { orange } from '@material-ui/core/colors';
 import ThemeTopLayout from 'gatsby-theme-material-ui-top-layout/src/components/top-layout';
 import createStore from './src/state/createStore'
 
 export const wrapRootElement = ({ element, props }) => {
   const store = createStore()
-  const theme = createMuiTheme({
+  const theme = createTheme({
     status: {
       danger: orange[500]
     },
