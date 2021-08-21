@@ -6,7 +6,6 @@
 
 // You can delete this file if you're not using it
 import React from 'react'
-import Layout from './src/components/layout'
 import { Provider } from 'react-redux'
 import { createTheme } from '@material-ui/core/styles';
 import { orange } from '@material-ui/core/colors';
@@ -25,9 +24,7 @@ export const wrapRootElement = ({ element, props }) => {
   return (
     <Provider store={store}>
       <ThemeTopLayout theme={theme}>
-        <Layout>
-          {element}
-        </Layout>
+        {element}
       </ThemeTopLayout>
     </Provider>
   )
