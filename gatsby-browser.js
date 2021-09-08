@@ -7,19 +7,15 @@
 // You can delete this file if you're not using it
 import React from 'react'
 import { Provider } from 'react-redux'
-import { createTheme } from '@material-ui/core/styles';
-import { orange } from '@material-ui/core/colors';
+import { createTheme, responsiveFontSizes } from '@material-ui/core/styles';
+import AppTheme from './static/theme';
 import ThemeTopLayout from 'gatsby-theme-material-ui-top-layout/src/components/top-layout';
 import createStore from './src/state/createStore'
 
 export const wrapRootElement = ({ element, props }) => {
   const store = createStore()
-  const theme = createTheme({
-    status: {
-      danger: orange[500]
-    },
-    spacing: 4
-  })
+  let theme = createTheme(AppTheme)
+  theme = responsiveFontSizes(theme)
 
   return (
     <Provider store={store}>
