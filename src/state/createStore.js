@@ -1,5 +1,3 @@
-// @flow
-
 import { compose, createStore } from 'redux';
 import rootReducer from './rootReducer'
 

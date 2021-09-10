@@ -1,5 +1,3 @@
-// @flow
-
 const initialState = {
   base: {
     items: []
