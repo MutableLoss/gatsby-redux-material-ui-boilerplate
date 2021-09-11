@@ -13,7 +13,7 @@ const AppTheme = createTheme({
       light: lightBlue[300],
       main: lightBlue[500],
       dark: lightBlue[700],
-      contrastText: grey[900]
+      contrastText: grey[50]
     },
     secondary: {
       light: red[500],
@@ -22,12 +22,18 @@ const AppTheme = createTheme({
       contrastText: grey[50]
     },
     action: {
-      hover: grey[900],
-      hoverOpacity: 0.7
+      active: red[200],
+      activeOpacity: 1,
+      hover: red[100],
+      hoverOpacity: 0.7,
+      focus: red[600],
+      focusOpacity: 1,
+      selected: red[300],
+      selectedOpacity: 1
     },
     background: {
-      default: grey[300],
-      paper: grey[400]
+      default: grey[50],
+      paper: grey[200]
     },
     common: {
       black: grey[900],
