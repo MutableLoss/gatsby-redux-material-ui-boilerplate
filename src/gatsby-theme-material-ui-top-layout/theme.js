@@ -1,10 +1,11 @@
+import { createTheme, responsiveFontSizes } from '@material-ui/core/styles';
 
 import red from '@material-ui/core/colors/red'
 import green from '@material-ui/core/colors/green'
 import lightBlue from '@material-ui/core/colors/lightBlue'
 import grey from '@material-ui/core/colors/grey'
 
-const AppTheme = {
+const AppTheme = createTheme({
   themeName: 'Default Theme',
   palette: {
     type: 'light',
@@ -66,6 +67,8 @@ const AppTheme = {
     mobileStepper: 1000,
     tooltip: 1500
   }
-};
+});
 
-export default AppTheme
+const theme = responsiveFontSizes(AppTheme)
+
+export default theme
