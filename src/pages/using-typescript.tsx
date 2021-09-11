@@ -1,6 +1,7 @@
 // If you don't want to use TypeScript you can delete this file!
 import * as React from "react"
-import { PageProps, Link, graphql } from "gatsby"
+import { Link } from "gatsby-theme-material-ui"
+import { PageProps, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -30,9 +31,9 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
     </p>
     <p>
       To learn more, head over to our{" "}
-      <a href="https://www.gatsbyjs.com/docs/typescript/">
+      <Link to="https://www.gatsbyjs.com/docs/typescript/">
         documentation about TypeScript
-      </a>
+      </Link>
       .
     </p>
     <Link to="/">Go back to the homepage</Link>

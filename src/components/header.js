@@ -1,6 +1,6 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import { Link } from "gatsby-theme-material-ui"
 import { makeStyles } from "@material-ui/core/styles"
 
 const Header = ({ siteTitle }) => {
@@ -32,7 +32,7 @@ const Header = ({ siteTitle }) => {
         <h1 style={{ margin: 0 }}>
           <Link
             to="/"
-            className={classes.link}
+            classes={{root: classes.link}}
           >
             {siteTitle}
           </Link>

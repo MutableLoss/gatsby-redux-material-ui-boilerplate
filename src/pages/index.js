@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { Link } from "gatsby-theme-material-ui"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
@@ -9,7 +9,7 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site with <a href="https://redux.js.org/">Redux</a> and <a href="https://material-ui.com/" target="_blank">Material-UI</a>.</p>
+    <p>Welcome to your new Gatsby site with <Link to="https://redux.js.org/" target="_blank">Redux</Link> and <Link to="https://material-ui.com/" target="_blank">Material-UI</Link>.</p>
     <p>Now go build something great.</p>
     <StaticImage
       src="../images/gatsby-astronaut.png"
