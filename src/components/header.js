@@ -7,11 +7,11 @@ import { makeStyles } from "@mui/styles"
 const Header = ({ siteTitle }) => {
   const useStyles = makeStyles(theme => ({
     header: {
-      background: theme.palette.primary.main,
+      // background: theme.palette.primary.main,
       marginBottom: `1.45rem`,
     },
     link: {
-      color: theme.palette.primary.contrastText,
+      // color: theme.palette.primary.contrastText,
       textDecoration: `none`,
     },
     title: {
