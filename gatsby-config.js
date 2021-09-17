@@ -5,6 +5,14 @@ module.exports = {
     author: `@mutableLoss`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
+  flags: {
+    DEV_SSR: false,
+    FAST_DEV: true,
+    DEV_WEBPACK_CACHE: true,
+    PRESERVE_FILE_DOWNLOAD_CACHE: false,
+    PARALLEL_SOURCING: false,
+    LMDB_STORE: false
+  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
