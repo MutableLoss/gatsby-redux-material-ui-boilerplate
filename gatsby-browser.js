@@ -13,9 +13,11 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 import createStore from './src/state/createStore'
 
-function TopLayout(props) {
+export const wrapRootElement = ({ element, props }) => {
+  const store = createStore()
+
   return (
-    <React.Fragment>
+    <Provider store={store}>
       <Helmet>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link
@@ -24,22 +26,9 @@ function TopLayout(props) {
         />
       </Helmet>
       <ThemeProvider theme={theme}>
-        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
-        {props.children}
-      </ThemeProvider>
-    </React.Fragment>
-  );
-}
-
-export const wrapRootElement = ({ element, props }) => {
-  const store = createStore()
-
-  return (
-    <Provider store={store}>
-      <TopLayout>
         {element}
-      </TopLayout>
+      </ThemeProvider>
     </Provider>
   )
 }
