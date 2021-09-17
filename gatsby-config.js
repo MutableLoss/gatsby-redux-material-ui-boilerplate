@@ -38,19 +38,12 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-theme-material-ui',
+      resolve: `gatsby-plugin-material-ui`,
       options: {
-        // webFontsConfig: {
-          // fonts: {
-          //   google: [
-          //     {
-          //       family: `Montserrat`,
-          //       variants: [`300`, `400`, `500`],
-          //     },
-          //   ],
-          // },
-        // }
-      }
+        stylesProvider: {
+          injectFirst: true,
+        },
+      },
     },
     {
       resolve: 'gatsby-plugin-react-redux',
