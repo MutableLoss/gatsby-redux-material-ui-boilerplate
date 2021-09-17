@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby-theme-material-ui"
+import Link from "@mui/material/Link"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"

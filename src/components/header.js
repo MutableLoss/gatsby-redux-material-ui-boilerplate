@@ -1,7 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby-theme-material-ui"
-import { makeStyles } from "@material-ui/core/styles"
+import Link from "@mui/material/Link"
+import { makeStyles } from "@mui/styles"
 
 const Header = ({ siteTitle }) => {
   const useStyles = makeStyles(theme => ({

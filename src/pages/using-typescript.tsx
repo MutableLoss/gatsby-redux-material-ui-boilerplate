@@ -1,6 +1,6 @@
 // If you don't want to use TypeScript you can delete this file!
 import * as React from "react"
-import { Link } from "gatsby-theme-material-ui"
+import Link from "@mui/material/Link"
 import { PageProps, graphql } from "gatsby"
 
 import Layout from "../components/layout"

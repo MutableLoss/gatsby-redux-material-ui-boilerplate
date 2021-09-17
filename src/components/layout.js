@@ -7,7 +7,7 @@
 
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby-theme-material-ui"
+import Link from "@mui/material/Link"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
