@@ -10,6 +10,10 @@
 
 This boilerplate gives you everything you need to write a Gatsby app using Redux and Material-UI. Aside from the framework it also offers ESLint, Jest, React-Test-Renderer, TypeScript, and Storybook. Since everything is already setup, all you have to do is start writing your app! 
 
+## MUI v5 Boilerplate
+
+If you want to use MUI v5, the mui-v5-update developmnt branch offers the current available support for MUI v5, which removes the gatsby-theme-material-ui plugin.
+
 
 ## Pre-Requisites
 
