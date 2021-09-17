@@ -7,11 +7,11 @@
 
 import * as React from "react"
 import PropTypes from "prop-types"
-import Link from "@mui/material/Link"
+import MuiLink from "@mui/material/Link"
+import { Link as GatsbyLink } from 'gatsby'
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
         >
           © {new Date().getFullYear()}, Built with
           {` `}
-          <Link to="https://www.gatsbyjs.com">Gatsby</Link>
+          <MuiLink component={GatsbyLink} to="https://www.gatsbyjs.com">Gatsby</MuiLink>
         </footer>
       </div>
     </>

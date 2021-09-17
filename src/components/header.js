@@ -1,6 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import Link from "@mui/material/Link"
+import MuiLink from "@mui/material/Link"
+import { Link as GatsbyLink } from 'gatsby'
 import { makeStyles } from "@mui/styles"
 
 const Header = ({ siteTitle }) => {
@@ -30,12 +31,13 @@ const Header = ({ siteTitle }) => {
         className={classes.title}
       >
         <h1 style={{ margin: 0 }}>
-          <Link
+          <MuiLink
+            component={GatsbyLink}
             to="/"
             classes={{root: classes.link}}
           >
             {siteTitle}
-          </Link>
+          </MuiLink>
         </h1>
       </div>
     </header>
