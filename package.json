@@ -67,7 +67,7 @@
     "clean": "gatsby clean",
     "test": "jest",
     "test-watch": "npm test -- --watch",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 -s ./src",
     "build-storybook": "build-storybook"
   },
   "repository": {
