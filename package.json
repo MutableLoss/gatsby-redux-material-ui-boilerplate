@@ -2,7 +2,7 @@
   "name": "gatsby-redux-material-ui-boilerplate",
   "private": true,
   "description": "A complete boilerplate starter with Gatsby Redux and Material-UI",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Dennis Brown",
   "dependencies": {
     "@emotion/react": "^11.4.1",
