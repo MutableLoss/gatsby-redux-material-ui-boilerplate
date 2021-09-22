@@ -1,14 +1,19 @@
-import { createTheme, responsiveFontSizes } from '@material-ui/core/styles';
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
-import red from '@material-ui/core/colors/red'
-import green from '@material-ui/core/colors/green'
-import lightBlue from '@material-ui/core/colors/lightBlue'
-import grey from '@material-ui/core/colors/grey'
+import red from '@mui/material/colors/red'
+import green from '@mui/material/colors/green'
+import lightBlue from '@mui/material/colors/lightBlue'
+import grey from '@mui/material/colors/grey'
 
-const AppTheme = createTheme({
-  themeName: 'Default Theme',
+// See the properties of MUI's default theme: 
+// https://mui.com/customization/default-theme/
+const DefaultTheme = createTheme()
+
+// DefaultTheme can be removed, I'm
+// just showing off how to merge themes
+const AppTheme = createTheme(DefaultTheme, {
   palette: {
-    type: 'light',
+    mode: 'light',
     primary: {
       light: lightBlue[300],
       main: lightBlue[500],
@@ -24,6 +29,9 @@ const AppTheme = createTheme({
     action: {
       active: red[200],
       activeOpacity: 1,
+      disabled: grey[200],
+      disabledBackground: grey[500],
+      disabledOpacity: 1,
       hover: red[100],
       hoverOpacity: 0.7,
       focus: red[600],
@@ -39,11 +47,6 @@ const AppTheme = createTheme({
       black: grey[900],
       white: grey[200]
     },
-    disabled: {
-      light: grey[700],
-      main: grey[800],
-      dark: grey[900]
-    },
     error: {
       light: red[400],
       main: red[500],
@@ -55,6 +58,11 @@ const AppTheme = createTheme({
       main: green[500],
       dark: green[300],
       contrastText: grey[800]
+    },
+    text: {
+      primary: grey[700],
+      secondary: lightBlue[500],
+      disabled: grey[500]
     }
   },
   overrides: {},
@@ -62,16 +70,20 @@ const AppTheme = createTheme({
   typography: {
     // eslint-disable-next-line quotes
     fontFamily: "'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'",
-    fontWeight: 'normal',
+    fontWeightLight: 400,
+    fontWeightRegular: 600,
+    fontWeightMedium: 700,
+    fontWeightBold: 800,
     lineHeight: 1.5
   },
   zIndex: {
+    mobileStepper: 1000,
+    speedDial: 1050,
+    appBar: 1100,
+    drawer: 1200,
     modal: 1300,
     snackbar: 1400,
-    drawer: 1200,
-    appBar: 1100,
-    mobileStepper: 1000,
-    tooltip: 1500
+    tooltip: 1500,
   }
 });
 

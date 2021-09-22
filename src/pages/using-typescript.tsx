@@ -1,6 +1,7 @@
 // If you don't want to use TypeScript you can delete this file!
 import * as React from "react"
-import { Link } from "gatsby-theme-material-ui"
+import MuiLink from "@mui/material/Link"
+import { Link as GatsbyLink } from 'gatsby'
 import { PageProps, graphql } from "gatsby"
 
 import Layout from "../components/layout"
@@ -31,12 +32,12 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
     </p>
     <p>
       To learn more, head over to our{" "}
-      <Link to="https://www.gatsbyjs.com/docs/typescript/">
+      <MuiLink component={GatsbyLink} to="https://www.gatsbyjs.com/docs/typescript/">
         documentation about TypeScript
-      </Link>
+      </MuiLink>
       .
     </p>
-    <Link to="/">Go back to the homepage</Link>
+    <MuiLink component={GatsbyLink} to="/">Go back to the homepage</MuiLink>
   </Layout>
 )
 

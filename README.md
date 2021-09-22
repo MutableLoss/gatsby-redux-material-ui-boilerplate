@@ -5,10 +5,10 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby starter boilerplate for Redux and Material-UI
+  Gatsby starter boilerplate for Redux and Material-UI (v5)
 </h1>
 
-This boilerplate gives you everything you need to write a Gatsby app using Redux and Material-UI. Aside from the framework it also offers ESLint, Jest, React-Test-Renderer, TypeScript, and Storybook. Since everything is already setup, all you have to do is start writing your app! 
+This boilerplate gives you everything you need to write a Gatsby app using Redux and using Material-UI with Emotion as a style library and theme for your app. The boilerplate also offers ESLint, Jest, React-Test-Renderer, TypeScript, and Storybook. Since everything is already setup, all you have to do is start writing your app! 
 
 ## MUI v5 Boilerplate
 

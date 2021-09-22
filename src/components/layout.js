@@ -1,17 +1,12 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
-import * as React from "react"
+/** @jsxImportSource @emotion/react */
+import { jsx, css } from "@emotion/react"
+import * as React from 'react';
 import PropTypes from "prop-types"
-import { Link } from "gatsby-theme-material-ui"
+import MuiLink from "@mui/material/Link"
+import { Link as GatsbyLink } from 'gatsby'
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,25 +19,26 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const styles = {
+    container: css`
+      margin: 0 auto;
+      max-width: 960;
+      padding: 0 1.0875rem 1.45rem;
+    `,
+    footer: css`
+      margin-top: 2rem;
+    `
+  }
+
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <div css={styles.container}>
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
+        <footer css={styles.footer}>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <Link to="https://www.gatsbyjs.com">Gatsby</Link>
+          <MuiLink component={GatsbyLink} to="https://www.gatsbyjs.com">Gatsby</MuiLink>
         </footer>
       </div>
     </>

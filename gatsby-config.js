@@ -8,7 +8,7 @@ module.exports = {
   flags: {
     DEV_SSR: false,
     FAST_DEV: true,
-    DEV_WEBPACK_CACHE: true,
+    DEV_WEBPACK_CACHE: false,
     PRESERVE_FILE_DOWNLOAD_CACHE: false,
     PARALLEL_SOURCING: false,
     LMDB_STORE: false
@@ -38,19 +38,12 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-theme-material-ui',
+      resolve: `gatsby-plugin-material-ui`,
       options: {
-        // webFontsConfig: {
-          // fonts: {
-          //   google: [
-          //     {
-          //       family: `Montserrat`,
-          //       variants: [`300`, `400`, `500`],
-          //     },
-          //   ],
-          // },
-        // }
-      }
+        stylesProvider: {
+          injectFirst: true,
+        },
+      },
     },
     {
       resolve: 'gatsby-plugin-react-redux',

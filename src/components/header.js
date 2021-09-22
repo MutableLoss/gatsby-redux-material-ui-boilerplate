@@ -1,41 +1,41 @@
-import * as React from "react"
+/** @jsxImportSource @emotion/react */
+import { jsx, css } from "@emotion/react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby-theme-material-ui"
-import { makeStyles } from "@material-ui/core/styles"
+import MuiLink from "@mui/material/Link"
+import { Link as GatsbyLink } from "gatsby"
+
+import { useTheme } from "@mui/material/styles"
 
 const Header = ({ siteTitle }) => {
-  const useStyles = makeStyles(theme => ({
-    header: {
-      background: theme.palette.primary.main,
-      marginBottom: `1.45rem`,
-    },
-    link: {
-      color: theme.palette.primary.contrastText,
-      textDecoration: `none`,
-    },
-    title: {
-      margin: `0 auto`,
-      maxWidth: 960,
-      padding: `1.45rem 1.0875rem`,
-    }
-  }))
+  const theme = useTheme()
 
-  const classes = useStyles()
+  const styles = {
+    header: css`
+      background-color: ${theme.palette.primary.main};
+      margin-bottom: 1.45rem;
+    `,
+    link: css`
+      color: ${theme.palette.primary.contrastText};
+      text-decoration: none;
+    `,
+    title: css`
+      margin: 0 auto;
+      max-width: 960;
+      padding: 1.45rem 1.0875rem;
+    `
+  }
 
   return (
-    <header
-      className={classes.header}
-    >
-      <div
-        className={classes.title}
-      >
+    <header css={styles.header}>
+      <div css={styles.title}>
         <h1 style={{ margin: 0 }}>
-          <Link
+          <MuiLink
+            component={GatsbyLink}
             to="/"
-            classes={{root: classes.link}}
+            sx={styles.link}
           >
             {siteTitle}
-          </Link>
+          </MuiLink>
         </h1>
       </div>
     </header>
