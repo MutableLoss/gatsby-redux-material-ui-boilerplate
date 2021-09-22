@@ -8,12 +8,17 @@
   Gatsby starter boilerplate for Redux and Material-UI (v5)
 </h1>
 
-This boilerplate gives you everything you need to write a Gatsby app using Redux and using Material-UI with Emotion as a style library and theme for your app. The boilerplate also offers ESLint, Jest, React-Test-Renderer, TypeScript, and Storybook. Since everything is already setup, all you have to do is start writing your app! 
+This boilerplate gives you everything you need to write a Gatsby app using Redux and using Material-UI with Emotion as a style library and theme for your app. The boilerplate also offers ESLint, Jest, React-Test-Renderer, TypeScript, and Storybook. Since everything is already setup, all you have to do is start writing your app!
 
-## Material-UI v4 Boilerplate
+## Built-In Material-UI Theme using Emotion
 
-If you want to use Material-UI v4 with the old API, the 0.1.0 release offers the old boilerplate for MUI v4 using the gatsby-theme-material-ui plugin.
+Material UI version 5 has several ways to override and inject styles, but since the plan is to move away from styled-components, the boilerplate demo is using Emotion directly with the MUI Theme, which you can see in the header.js and layout.js files. If you wish to continue using styled-components with MUI v5, you can install the @mui/styles package using the methods outlined in the [Migration from v4 to v5 guide](https://mui.com/guides/migration-v4/).
 
+## Material-UI v4 Boilerplate (legacy)
+
+If you want to use Material-UI v4 with the old API, the [0.1.0](https://github.com/MutableLoss/gatsby-redux-material-ui-boilerplate/releases/tag/0.1.0) release is a MUI v4 boilerplate using the gatsby-theme-material-ui plugin.
+
+# Getting Started
 
 ## Pre-Requisites
 
@@ -36,7 +41,7 @@ $ cd gatsby-redux-material-ui-boilerplate
 $ yarn install
 ```
 
-# Usage
+# Development Usage
 
 Starting the Gatsby App in Development
 ```
@@ -54,19 +59,27 @@ Start Storybook:
 $ yarn storybook
 ```
 
-Run Unit Tests:
+Run Unit Tests (once):
 
 ```
 $ yarn test
 ```
 
-Test in watch-mode:
+Run Unit Tests (watch-mode):
 
 ```
 $ yarn test-watch
 ```
 
-## TypeScript
+## Noteable Boilerplate Files
+
+* gatsby-browser.js - default context providers (Redux/MUI Theme)
+* theme.js - the MUI Theme File
+* src/state - Redux store / initial state file / Redux slices
+* src/stories - Storybook Story folder
+* jest.config.js - Jest config file
+
+## TypeScript Support
 
 Gatsby offers TypeScript support by default, so you can use it right out of the box. You can find more information on using TypeScript in Using Typescript built into the start app itself [using-typecript.tsx](src/pages/using-typecript.tsx), or from the [Gatsby Docs](https://www.gatsbyjs.com/docs/how-to/custom-configuration/typescript/). 
 
