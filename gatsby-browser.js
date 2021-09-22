@@ -5,9 +5,8 @@
  */
 
 // You can delete this file if you're not using it
-import React from 'react'
-import { Provider } from 'react-redux'
-import { Helmet } from 'react-helmet';
+import React from 'react';
+import { Provider } from 'react-redux';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
@@ -18,13 +17,6 @@ export const wrapRootElement = ({ element, props }) => {
 
   return (
     <Provider store={store}>
-      <Helmet>
-        <meta name="viewport" content="initial-scale=1, width=device-width" />
-        <link
-          href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
-          rel="stylesheet"
-        />
-      </Helmet>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         {element}
