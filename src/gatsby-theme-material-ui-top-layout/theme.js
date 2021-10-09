@@ -69,11 +69,11 @@ const AppTheme = createTheme(DefaultTheme, {
   spacing: 4,
   typography: {
     // eslint-disable-next-line quotes
-    fontFamily: ['Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
-    fontWeightLight: 400,
-    fontWeightRegular: 600,
-    fontWeightMedium: 700,
-    fontWeightBold: 800,
+    fontFamily: ['Roboto', 'Arial', 'sans-serif'],
+    fontWeightLight: 300,
+    fontWeightRegular: 400,
+    fontWeightMedium: 500,
+    fontWeightBold: 700,
     lineHeight: 1.5
   },
   zIndex: {
@@ -87,6 +87,4 @@ const AppTheme = createTheme(DefaultTheme, {
   }
 });
 
-const theme = responsiveFontSizes(AppTheme)
-
-export default theme
+export default responsiveFontSizes(AppTheme)
