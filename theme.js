@@ -69,7 +69,7 @@ const AppTheme = createTheme(DefaultTheme, {
   spacing: 4,
   typography: {
     // eslint-disable-next-line quotes
-    fontFamily: "'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'",
+    fontFamily: ['Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
     fontWeightLight: 400,
     fontWeightRegular: 600,
     fontWeightMedium: 700,
