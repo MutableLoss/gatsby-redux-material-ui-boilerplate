@@ -65,7 +65,7 @@ const AppTheme = createTheme(DefaultTheme, {
       disabled: grey[500]
     }
   },
-  overrides: {},
+  components: {},
   spacing: 4,
   typography: {
     // eslint-disable-next-line quotes
@@ -74,7 +74,10 @@ const AppTheme = createTheme(DefaultTheme, {
     fontWeightRegular: 400,
     fontWeightMedium: 500,
     fontWeightBold: 700,
-    lineHeight: 1.5
+    lineHeight: 1.5,
+    h1: {
+      fontSize: '5.5rem'
+    }
   },
   zIndex: {
     mobileStepper: 1000,
