@@ -9144,6 +9144,11 @@ gatsby-link@^3.11.0:
     "@types/reach__router" "^1.3.7"
     prop-types "^15.7.2"
 
+gatsby-material-ui-components@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-material-ui-components/-/gatsby-material-ui-components-5.0.0.tgz#fa7ff3d1a8de6a14f9c72809461b99450493ed1f"
+  integrity sha512-C/Hq8ZcvtK0DWTurJfndNwrC5GiBvsmKK3z94C7No39Hm6lv12OGvBO5FxASe5GNY//fpBvNri7H2ZElgz9Ndw==
+
 gatsby-page-utils@^1.11.0:
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/gatsby-page-utils/-/gatsby-page-utils-1.11.0.tgz#a8ba0b4cc50f235f421c39d2fd0ce6c906896367"
@@ -9157,6 +9162,14 @@ gatsby-page-utils@^1.11.0:
     glob "^7.1.6"
     lodash "^4.17.21"
     micromatch "^4.0.2"
+
+gatsby-plugin-compile-es6-packages@^2.1.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-compile-es6-packages/-/gatsby-plugin-compile-es6-packages-2.1.1.tgz#e01626799b8d84887606b2f0e8f3fd429e6025b8"
+  integrity sha512-UfEbgiyI15yO2Kb+cAuSCIK/YyNz7baKBE/HhMuuLq+pyh1fhNW0x8swl/TZiH8QMqE8cgYGBGEUkdiFb1K6Lg==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    regex-escape "^3.4.8"
 
 gatsby-plugin-gatsby-cloud@^2.11.0:
   version "2.11.0"
@@ -9208,6 +9221,14 @@ gatsby-plugin-material-ui@^4.0.2:
     "@emotion/cache" "^11.4.0"
     "@emotion/server" "^11.4.0"
 
+gatsby-plugin-material-ui@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-material-ui/-/gatsby-plugin-material-ui-4.0.3.tgz#f0d3fc589852c15197ff84b077c517aa14108d4f"
+  integrity sha512-sUqxoQnEN/a2oi67JTR6vU7I0ucICYk2J/H4NWIBJAWZrKsVI+NiiESacqu0pbNGQ4h63RnRLtXTgD9b/1mbdQ==
+  dependencies:
+    "@emotion/cache" "^11.4.0"
+    "@emotion/server" "^11.4.0"
+
 gatsby-plugin-offline@^4.11.0:
   version "4.11.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-4.11.0.tgz#2cbd4d314bdcd7c0fb970864ec636945c067539b"
@@ -9242,6 +9263,13 @@ gatsby-plugin-react-helmet@^4.11.0:
   integrity sha512-FTEneTpt2IngYRVXrJXIHtQFnFt6THu7JH/9aAtq51hPVIglrDVBsDnPgRfALjNzJfKt0OyNmpoLEXOTFLpSGg==
   dependencies:
     "@babel/runtime" "^7.14.6"
+
+gatsby-plugin-react-helmet@^4.2.0:
+  version "4.14.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-4.14.0.tgz#69fe0bd90d65356a0aa144d4e8d75d2559638514"
+  integrity sha512-IpLC0mWRNP+E0ezDBXHciVATW+mv2MCvCP3lEYtFQ8mfcm3K//MpeynouNQSPCXn9cH7fr5w0Y355Wl5w1kw1A==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
 
 gatsby-plugin-react-redux@^1.1.0:
   version "1.1.0"
@@ -9315,7 +9343,7 @@ gatsby-plugin-web-font-loader@^1.0.4:
     babel-runtime "^6.26.0"
     webfontloader "^1.6.28"
 
-gatsby-plugin-webfonts@^2.1.1:
+gatsby-plugin-webfonts@^2.1.0, gatsby-plugin-webfonts@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-webfonts/-/gatsby-plugin-webfonts-2.1.1.tgz#52159f719369b22cc49d0f82d9119a2f6c78c9d1"
   integrity sha512-eeek8hQ2kTrGIIxR97RmRxqDFwd5Uh0TbkJsSwcPowrBM1RrUVhAwERUYOcmQjK7+COjPOer3u61pcAyF7LX1w==
@@ -9436,6 +9464,25 @@ gatsby-telemetry@^2.11.0:
     lodash "^4.17.21"
     node-fetch "^2.6.1"
     uuid "3.4.0"
+
+gatsby-theme-material-ui-top-layout@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-material-ui-top-layout/-/gatsby-theme-material-ui-top-layout-5.0.0.tgz#af2fd4d027bdeb20420b8f5af1ef560cf1a34c85"
+  integrity sha512-stRpWe7vb3mDgoMDYrZ6mhSEbdGRNX9ZgUf8PEf1KUZ6LYyP/NqNkLxXTD0MTWsMtR5WvtSwAZe+rQcuHUTzNw==
+  dependencies:
+    gatsby-plugin-react-helmet "^4.2.0"
+
+gatsby-theme-material-ui@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-material-ui/-/gatsby-theme-material-ui-5.0.0.tgz#d6c62220568eed7829b8b92870fda13689459b2f"
+  integrity sha512-isxAnDxXpaPXFCAl3IuYE9opEzx8ec5nfbSvoKtOY/3IxE/jaB0W+z9cMvRoI0Tx9+Io0ZDTUBPkr4Yr7as0xg==
+  dependencies:
+    gatsby-material-ui-components "^5.0.0"
+    gatsby-plugin-compile-es6-packages "^2.1.0"
+    gatsby-plugin-material-ui "^4.0.3"
+    gatsby-plugin-webfonts "^2.1.0"
+    gatsby-theme-material-ui-top-layout "^5.0.0"
+    react-helmet "^6.1.0"
 
 gatsby-transformer-sharp@^3.11.0:
   version "3.11.0"
@@ -15688,6 +15735,11 @@ regenerator-transform@^0.14.2:
   integrity sha512-eOf6vka5IO151Jfsw2NO9WpGX58W6wWmefK3I1zEGr0lOD0u8rwPaNqQL1aRxUaxLeKO3ArNh3VYg1KbaD+FFw==
   dependencies:
     "@babel/runtime" "^7.8.4"
+
+regex-escape@^3.4.8:
+  version "3.4.10"
+  resolved "https://registry.yarnpkg.com/regex-escape/-/regex-escape-3.4.10.tgz#b45afec7a6e793b786ad193dc3d18b46b5ae08e6"
+  integrity sha512-qEqf7uzW+iYcKNLMDFnMkghhQBnGdivT6KqVQyKsyjSWnoFyooXVnxrw9dtv3AFLnD6VBGXxtZGAQNFGFTnCqA==
 
 regex-not@^1.0.0, regex-not@^1.0.2:
   version "1.0.2"
