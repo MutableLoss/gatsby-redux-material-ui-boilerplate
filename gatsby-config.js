@@ -53,10 +53,17 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-material-ui`,
+      resolve: `gatsby-theme-material-ui`,
       options: {
-        stylesProvider: {
-          injectFirst: true,
+        webFontsConfig: {
+          fonts: {
+            google: [
+              {
+                family: `Roboto`,
+                variants: [`300`, `400`, `500`],
+              },
+            ],
+          },
         },
       },
     },
