@@ -38,6 +38,21 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Roboto"]
+        }
+      }
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: '/sitemap',
+        // excludes: []
+      }
+    },
+    {
       resolve: `gatsby-plugin-material-ui`,
       options: {
         stylesProvider: {
