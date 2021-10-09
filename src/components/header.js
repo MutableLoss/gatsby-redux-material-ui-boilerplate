@@ -1,44 +1,37 @@
-/** @jsxImportSource @emotion/react */
-import { jsx, css } from "@emotion/react"
-import PropTypes from "prop-types"
-import MuiLink from "@mui/material/Link"
-import { Link as GatsbyLink } from "gatsby"
-
-import { useTheme } from "@mui/material/styles"
+import PropTypes from "prop-types";
+import { Box, Typography } from "@mui/material";
+import { Link } from "gatsby-theme-material-ui";
 
 const Header = ({ siteTitle }) => {
-  const theme = useTheme()
-
   const styles = {
-    header: css`
-      background-color: ${theme.palette.primary.main};
-      margin-bottom: 1.45rem;
-    `,
-    link: css`
-      color: ${theme.palette.primary.contrastText};
-      text-decoration: none;
-    `,
-    title: css`
-      margin: 0 auto;
-      max-width: 960;
-      padding: 1.45rem 1.0875rem;
-    `
+    header: {
+      backgroundColor: theme => theme.palette.primary.main,
+      marginBottom: '1.45rem'
+    },
+    link: {
+      color: theme => theme.palette.primary.contrastText,
+      textDecoration: 'none'
+    },
+    title: {
+      m: '0 auto',
+      maxWidth: 960,
+      p: '1.45rem 1.0875rem'
+    }
   }
 
   return (
-    <header css={styles.header}>
-      <div css={styles.title}>
-        <h1 style={{ margin: 0 }}>
-          <MuiLink
-            component={GatsbyLink}
-            to="/"
-            sx={styles.link}
-          >
-            {siteTitle}
-          </MuiLink>
-        </h1>
-      </div>
-    </header>
+    <Box component="header" sx={styles.header}>
+      <Box component="div" sx={styles.title}>
+        <Link
+          to="/"
+          sx={styles.link}
+        >
+          <Typography variant="h2" sx={{ m: 0 }}>
+              {siteTitle}
+          </Typography>
+        </Link>
+      </Box>
+    </Box>
   )
 }
 

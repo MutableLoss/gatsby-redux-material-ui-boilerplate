@@ -1,11 +1,10 @@
 // If you don't want to use TypeScript you can delete this file!
-import * as React from "react"
-import MuiLink from "@mui/material/Link"
-import { Link as GatsbyLink } from 'gatsby'
-import { PageProps, graphql } from "gatsby"
+import * as React from "react";
+import { Link } from "gatsby-theme-material-ui";
+import { PageProps, graphql } from "gatsby";
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from "../components/layout";
+import Seo from "../components/seo";
 
 type DataProps = {
   site: {
@@ -32,12 +31,12 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
     </p>
     <p>
       To learn more, head over to our{" "}
-      <MuiLink component={GatsbyLink} to="https://www.gatsbyjs.com/docs/typescript/">
+      <Link to="https://www.gatsbyjs.com/docs/typescript/">
         documentation about TypeScript
-      </MuiLink>
+      </Link>
       .
     </p>
-    <MuiLink component={GatsbyLink} to="/">Go back to the homepage</MuiLink>
+    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 

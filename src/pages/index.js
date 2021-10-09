@@ -1,16 +1,15 @@
-import * as React from "react"
-import MuiLink from "@mui/material/Link"
-import { Link as GatsbyLink } from 'gatsby'
-import { StaticImage } from "gatsby-plugin-image"
+import * as React from "react";
+import { Link } from "gatsby-theme-material-ui";
+import { StaticImage } from "gatsby-plugin-image";
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from "../components/layout";
+import Seo from "../components/seo";
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site with <MuiLink component={GatsbyLink} to="https://redux.js.org/" target="_blank">Redux</MuiLink> and <MuiLink component={GatsbyLink} to="https://material-ui.com/" target="_blank">Material-UI</MuiLink>.</p>
+    <p>Welcome to your new Gatsby site with <Link to="https://redux.js.org/" target="_blank">Redux</Link> and <Link to="https://material-ui.com/" target="_blank">Material-UI</Link>.</p>
     <p>Now go build something great.</p>
     <StaticImage
       src="../images/gatsby-astronaut.png"
@@ -21,8 +20,8 @@ const IndexPage = () => (
       style={{ marginBottom: `1.45rem` }}
     />
     <p>
-      <MuiLink component={GatsbyLink} to="/page-2/">Go to page 2</MuiLink> <br />
-      <MuiLink component={GatsbyLink} to="/using-typescript/">Go to "Using TypeScript"</MuiLink>
+      <Link to="/page-2/">Go to page 2</Link> <br />
+      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
     </p>
   </Layout>
 )
