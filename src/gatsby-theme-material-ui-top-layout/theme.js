@@ -68,8 +68,22 @@ const AppTheme = createTheme(DefaultTheme, {
     },
     tonalOffset: 0.2
   },
-  components: {},
+  components: {
+    MuiButton: {
+      defaultProps: {
+        variant: 'contained',
+        sx: {
+          borderRadius: 2,
+          px: 5,
+          py: 2
+        }
+      }
+    }
+  },
   spacing: 4,
+  shape: {
+    borderRadius: 2
+  },
   typography: {
     // eslint-disable-next-line quotes
     fontFamily: ['Roboto', 'Arial', 'sans-serif'],
