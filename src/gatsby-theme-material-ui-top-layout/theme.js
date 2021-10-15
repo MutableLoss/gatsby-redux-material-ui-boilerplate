@@ -96,6 +96,12 @@ const AppTheme = createTheme(DefaultTheme, {
       fontSize: '5.5rem'
     }
   },
+  breakpoints: {
+    mobile: 0,
+    tablet: 640,
+    laptop: 1024,
+    desktop: 1280
+  },
   zIndex: {
     mobileStepper: 1000,
     speedDial: 1050,
