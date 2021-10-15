@@ -1,6 +1,8 @@
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
 import red from '@mui/material/colors/red'
+import orange from '@mui/material/colors/orange'
+import yellow from '@mui/material/colors/green'
 import green from '@mui/material/colors/green'
 import lightBlue from '@mui/material/colors/lightBlue'
 import grey from '@mui/material/colors/grey'
@@ -9,8 +11,8 @@ import grey from '@mui/material/colors/grey'
 // https://mui.com/customization/default-theme/
 const DefaultTheme = createTheme()
 
-// DefaultTheme can be removed, I'm
-// just showing off how to merge themes
+// DefaultTheme is redundant and can be removed
+// I'm just showing how we can merge themes
 const AppTheme = createTheme(DefaultTheme, {
   palette: {
     mode: 'light',
@@ -48,22 +50,23 @@ const AppTheme = createTheme(DefaultTheme, {
       white: grey[200]
     },
     error: {
-      light: red[400],
-      main: red[500],
-      dark: red[300],
-      contrastText: grey[800]
+      main: red[500]
     },
     success: {
-      light: green[400],
-      main: green[500],
-      dark: green[300],
-      contrastText: grey[800]
+      main: green[500]
+    },
+    info: {
+      main: lightBlue[500]
+    },
+    warning: {
+      main: yellow[500]
     },
     text: {
       primary: grey[700],
       secondary: lightBlue[500],
       disabled: grey[500]
-    }
+    },
+    tonalOffset: 0.2
   },
   components: {},
   spacing: 4,
