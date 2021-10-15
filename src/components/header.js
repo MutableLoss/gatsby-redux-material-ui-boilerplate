@@ -5,17 +5,28 @@ import { Link } from "gatsby-theme-material-ui";
 const Header = ({ siteTitle }) => {
   const styles = {
     header: {
-      backgroundColor: theme => theme.palette.primary.main,
-      marginBottom: '1.45rem'
+      backgroundColor: 'primary.main',
+      mb: {
+        mobile: 2,
+        desktop: 4
+      }
     },
     link: {
-      color: theme => theme.palette.primary.contrastText,
+      color: 'primary.contrastText',
       textDecoration: 'none'
     },
     title: {
-      m: '0 auto',
+      my: 0,
+      mx: 'auto',
       maxWidth: 960,
-      p: '1.45rem 1.0875rem'
+      px: {
+        mobile: 2,
+        tablet: 4
+      },
+      py: {
+        mobile: 4,
+        tablet: 8
+      }
     }
   }
 

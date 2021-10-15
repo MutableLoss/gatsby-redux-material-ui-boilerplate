@@ -19,12 +19,15 @@ const Layout = ({ children }) => {
 
   const styles = {
     container: {
-      m: '0 auto',
+      my: 0,
+      mx: 'auto',
       maxWidth: 960,
-      p: '0 1.0875rem 1.45rem'
+      pt: 0,
+      px: '1.0875rem',
+      pb: '1.45rem'
     },
     footer: {
-      marginTop: '2rem'
+      mt: '2rem'
     }
   }
 
